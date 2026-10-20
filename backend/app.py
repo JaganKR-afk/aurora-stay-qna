@@ -36,7 +36,7 @@ rag_api = Flask("Aurora Stay API")
 # Load the embedding model
 # ---------------------------------------------------------
 
-embeddings = HuggingFaceEmbeddings( 
+embeddings = HuggingFaceEmbeddings(
     model_name=EMBED_MODEL,
     model_kwargs={"device": "cpu"},
     encode_kwargs={"normalize_embeddings": True},
